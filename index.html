@@ -326,7 +326,7 @@ let lastSection = null;
 DATA.chapters.forEach((ch, idx)=>{
   if(ch.section !== lastSection){
     lastSection = ch.section;
-    html += `<div class="section-divider"><div class="sd-title">${ch.section}</div><div class="sd-sub">${ch.section==='道经'?'WAY':'VIRTUE'}</div></div>`;
+    html += `<div class="section-divider"><div class="sd-title">${ch.section}</div><div class="sd-sub">${ch.section==='道经'?'ㅤ':'ㅤ'}</div></div>`;
   }
   html += `<section class="chapter" id="ch-${idx}">`;
   html += `<div class="chapter-num">第 ${idx+1} 章</div>`;
