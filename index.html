@@ -282,9 +282,9 @@ footer .seal{
 
 <nav id="topbar">
   <div class="brand" onclick="scrollTo({top:0,behavior:'smooth'})">
-    道德经<small>宇松注本 · 日出之境</small>
+    道德經<small>宇松注本 · 日出之境</small>
   </div>
-  <button id="menuBtn">目录</button>
+  <button id="menuBtn">目錄</button>
 </nav>
 
 <aside id="drawer">
@@ -293,7 +293,7 @@ footer .seal{
 </aside>
 
 <header id="hero">
-  <div class="hero-title">道德经</div>
+  <div class="hero-title">道德經</div>
   <div class="hero-sub">注 本</div>
   <div class="hero-notice">（不可商用 仅限自用）</div>
   <div class="hero-line"></div>
@@ -303,7 +303,7 @@ footer .seal{
 <main id="content"></main>
 
 <footer>
-  <div>道德经 · 宇松注本</div>
+  <div>道德經 · 宇松注本</div>
   <div style="margin-top:8px;opacity:.6">（不可商用 仅限自用）</div>
   <div class="seal">宇 松</div>
 </footer>
@@ -326,7 +326,7 @@ let lastSection = null;
 DATA.chapters.forEach((ch, idx)=>{
   if(ch.section !== lastSection){
     lastSection = ch.section;
-    html += `<div class="section-divider"><div class="sd-title">${ch.section}</div><div class="sd-sub">${ch.section==='道经'?'ㅤ':'ㅤ'}</div></div>`;
+    html += `<div class="section-divider"><div class="sd-title">${ch.section}</div><div class="sd-sub">${ch.section==='道经'?'WAY':'VIRTUE'}</div></div>`;
   }
   html += `<section class="chapter" id="ch-${idx}">`;
   html += `<div class="chapter-num">第 ${idx+1} 章</div>`;
